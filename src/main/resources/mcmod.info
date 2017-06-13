@@ -1,0 +1,16 @@
+[
+    {
+  "modid": "aptbts",
+  "name": "Aperture:Breaking The Septenary",
+  "description": "A 1.10.2 port of the unreleased and outdated 1.7.10 Aperture Mod, complete with great lenses and widened views. Supports the nonary peasants as well.",
+  "version": "1.9.4/1.10.2",
+  "mcversion": "${mcversion}",
+  "url":"",
+  "updateUrl":"",
+  "authorList": ["N00bcak"],
+  "credits": "Nah I'm too poor to get (a) credit (card)",
+  "logoFile":"",
+  "screenshots": [],
+  "dependencies": []
+    }
+]

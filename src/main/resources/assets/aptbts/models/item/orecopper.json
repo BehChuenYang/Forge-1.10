@@ -1,0 +1,6 @@
+{
+  "parent": "aptbts:blocks/orecopper",
+  "textures": {
+    "inventory": "aptbts:blocks/orecopper"
+  }
+}
