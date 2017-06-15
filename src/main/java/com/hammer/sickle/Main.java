@@ -1,9 +1,6 @@
 package com.aperture.breaktheseptenary;
 
-import com.aperture.breaktheseptenary.Block.BCropHemp;
-import com.aperture.breaktheseptenary.Proxy.CommonProxy;
-import com.aperture.breaktheseptenary.init.Blocks;
-import com.aperture.breaktheseptenary.init.Items;
+import com.aperture.breaktheseptenary.Proxy.Common;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -12,16 +9,14 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import static net.minecraftforge.fml.common.registry.GameRegistry.register;
 
-@Mod(modid = BackEnd.MODID, name=BackEnd.NAME,version = BackEnd.VERSION,acceptedMinecraftVersions = BackEnd.VERSIONS)
-public class  Main{
-    @Mod.Instance
+@Mod(modid = "hs", name="Hammer and Sickle",version = "1.9-1.10_ALPHA",acceptedMinecraftVersions = "[1.9.4,1.10.2]")
+public class Main{
+    @Mod.Instance("hs")
     public static Main instance;
-    @SidedProxy(clientSide=BackEnd.CLIENT_PROXY_CLASS,serverSide = BackEnd.SERVER_PROXY_CLASS)
-    public static CommonProxy proxy;
+    @SidedProxy( clientSide="com.hammer.sickle.proxy.Client", serverSide = "com.hammer.sickle.proxy.Server")
+    public static Common proxy;
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-    Blocks.init();
-    Items.init();
     }
     public void init(FMLInitializationEvent event){
     }
