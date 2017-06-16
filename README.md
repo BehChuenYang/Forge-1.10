@@ -3,5 +3,5 @@
 #### Introduction
 >don't want to spoil anything
 ##### Urge to contribute?
-[read this](Contribute.md)
+[read this](CONTRIBUTING.md)
 >come on you can read it right
