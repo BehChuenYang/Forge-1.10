@@ -1,6 +1,6 @@
-package com.aperture.breaktheseptenary;
+package com.hammer.sickle;
 
-import com.aperture.breaktheseptenary.Proxy.Common;
+import com.hammer.sickle.Proxy.Common;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -13,13 +13,15 @@ import static net.minecraftforge.fml.common.registry.GameRegistry.register;
 public class Main{
     @Mod.Instance("hs")
     public static Main instance;
-    @SidedProxy( clientSide="com.hammer.sickle.proxy.Client", serverSide = "com.hammer.sickle.proxy.Server")
+    @SidedProxy(clientSide="com.hammer.sickle.Proxy.Client", serverSide = "com.hammer.sickle.Proxy.Server")
     public static Common proxy;
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     }
+    @Mod.EventHandler
     public void init(FMLInitializationEvent event){
     }
+    @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event){
     }
 
